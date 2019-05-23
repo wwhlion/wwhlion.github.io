@@ -39,6 +39,9 @@
 </head>
 </html>
 <body>
+{% if theme.leancloud_visitors.enable %}
+  	 {% include '_scripts/lean-analytics.swig' %}
+  {%  endif %}
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
@@ -308,6 +311,11 @@
   
 
 
+{% if theme.leancloud_visitors.enable %}
+		  	 <span id="{{ url_for(post.path) }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
+            &nbsp; | &nbsp; {{__('post.visitors')}}
+            </span>
+		  {% endif %}
           </div>
         </div>
       </div>
