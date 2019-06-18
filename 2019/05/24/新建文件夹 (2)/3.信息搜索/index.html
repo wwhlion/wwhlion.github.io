@@ -193,42 +193,6 @@
 <p>文献搜索与管理<br><a href="https://www.bilibili.com/video/av40002909" target="_blank" rel="noopener">https://www.bilibili.com/video/av40002909</a><br><a href="https://www.bilibili.com/video/av24964316/?p=17" target="_blank" rel="noopener">https://www.bilibili.com/video/av24964316/?p=17</a></p>
 
       
-		
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div>
-<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'false' == true ? true : false;
-   var verify = 'false' == true ? true : false;
-   new Valine({
-            av: AV,
-            el: '#vcomment',
-            notify: notify,
-            verify: verify,
-            app_id: TwzKyQ1v7S5BujdK3qEEwkrj-gzGzoHsz,
-            app_key: z3q7VvkgHzp4r9ghBuCQJyck ,
-            placeholder: "欢迎评论",
-            avatar: "",
-            avatar_cdn: "https://sdn.geekzu.org/avatar/",
-            pageSize: 15
-    });
-    if(window.location.hash){
-          var checkExist = setInterval(function() {
-            if (document.getElementById(window.location.hash.replace("#",""))) {
-              location.href = window.location.hash;
-              clearInterval(checkExist);
-            }
-          }, 250);
-        }
-</script>
-
-  </section>
 
       
         <div class="page-reward">
@@ -257,6 +221,9 @@
           </a>
         </div>
       
+            
+      
+
     </div>
     <div class="article-info article-info-index">
       
@@ -358,13 +325,26 @@
         
     </div>
 </aside>
- 
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div>
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
 <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
@@ -393,18 +373,7 @@
         }
 </script>
 
-  </section>
- 
-
-
-
-  
-  
-
-  
-
-  
-
+    </section>
   
 
 
